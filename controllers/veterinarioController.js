@@ -198,6 +198,7 @@ const actualizarPerfil = async (req, res) => {
         veterinario.web = req.body.web;
         veterinario.telefono = req.body.telefono;
         veterinario.email = req.body.email;
+        veterinario.pais = req.body.pais;
 
         const veterinarioActualizado = await veterinario.save();
         res.json(veterinarioActualizado);

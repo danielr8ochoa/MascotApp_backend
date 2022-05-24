@@ -1,4 +1,4 @@
-import  mongoose  from "mongoose";
+import mongoose  from "mongoose";
 import bcrypt from 'bcrypt';
 import generarId from '../helpers/generarId.js';
 
@@ -19,6 +19,11 @@ const veterinarioSchema = mongoose.Schema({
         trim: true
     },
     telefono: {
+        type: Number,
+        default: null,
+        trim: true
+    },
+    pais: {
         type: String,
         default: null,
         trim: true
